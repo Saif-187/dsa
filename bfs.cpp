@@ -11,7 +11,7 @@ void bfs(vector<vector<int>>& graph,vector<int>& arr,int vertex){
     while(!que.empty()){
         int curr=que.front();
         que.pop();
-        for(int i=1;i<=arr.size();i++){
+        for(int i=1;i<arr.size();i++){
             if(arr[i]==0 && graph[curr][i]==1){
                 arr[i]=1;
                 que.push(i);
